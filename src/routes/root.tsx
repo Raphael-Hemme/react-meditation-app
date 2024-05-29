@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const root = () => {
+export const Root = () => {
   return (
     <>
       <nav>
