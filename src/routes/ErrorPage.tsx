@@ -21,7 +21,7 @@ export const ErrorPage = () => {
 
   return (
     <div id="error-page">
-      <h1>Inhale... ... exhale.</h1>
+      <h1>Inhale... . &nbsp;. &nbsp;&nbsp;. exhale.</h1>
       <p>Sorry, there has been an unexpected error.</p>
       <p>
         <i>{errorMessage}</i>
