@@ -21,7 +21,7 @@ export const ErrorPage = () => {
 
   return (
     <div id="error-page">
-      <h1 className="text-3xl font-bold underline text-red-600">Inhale... . &nbsp;. &nbsp;&nbsp;. exhale.</h1>
+      <h1 className="text-3xl font-bold underline text-green-700">Inhale... . &nbsp;. &nbsp;&nbsp;. exhale.</h1>
       <p>Sorry, there has been an unexpected error.</p>
       <p>
         <i>{errorMessage}</i>
