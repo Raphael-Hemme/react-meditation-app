@@ -12,6 +12,7 @@ import { ErrorPage } from './routes/ErrorPage.tsx';
 import { PracticePage } from './routes/PracticePage.tsx';
 import { SettingsPage } from './routes/SettingsPage.tsx';
 import { StatsPage } from './routes/StatsPage.tsx';
+import { HomePage } from './routes/HomePage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'stats',
         element: <StatsPage />
+      },
+      {
+        path: '',
+        element: <HomePage />
       }
     ]
   }

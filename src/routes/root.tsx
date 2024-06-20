@@ -28,8 +28,6 @@ export const Root = () => {
 
       <main>
         <Outlet />
-{/*         <h1>Present</h1>
-        <p>Present is a simple app that helps you practice be present in the moment.</p> */}
       </main>
 
     </div>

@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-7xl font-bold mb-4;
+  }
+  p {
+    @apply mb-2;
+  }
+}
