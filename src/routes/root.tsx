@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 
 export const Root = () => {
-  const containerBaseClass = 'w-screen h-screen p-10 bg-gray-100';
+  const containerBaseClass = 'w-screen h-100 p-10 bg-gradient-to-b from-green-100 to-blue-200';
   let containerCondClass = '';
   
   const [containerClassList, setContainerClassList] = useState(containerBaseClass);
@@ -15,10 +15,12 @@ export const Root = () => {
   return (
     <div className={`${containerBaseClass} ${containerCondClass}`}>
       
-      <button onClick={toggleMenu} className="p-2 bg-indigo-600 text-white rounded-full"><img src="/src/assets/menu_icon.svg" /></button>
+      <button onClick={toggleMenu} className="fixed top-5 left-5 p-2 z-10 bg-gradient-to-b from-green-500 to-blue-500 text-white rounded-full">
+        <img src="/src/assets/menu_icon.svg" />
+      </button>
 
-      <nav className={menuIsOpen ? 'opacity-100' : 'opacity-0'}>
-        <ul>
+      <nav className={`${menuIsOpen ? 'w-1/2 px-6' : 'w-0 px-0'} fixed top-0 left-0 bottom-0 py-28 bg-purple-200 overflow-hidden`}>
+        <ul className="flex flex-col justify-between gap-5">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/practice">Practice</NavLink></li>
           <li><NavLink to="/stats">Stats</NavLink></li>
