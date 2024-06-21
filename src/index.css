@@ -4,9 +4,25 @@
 
 @layer base {
   h1 {
-    @apply text-7xl font-bold mb-4;
+    @apply mb-4 text-7xl font-bold;
   }
   p {
-    @apply mb-2 text-purple-800;
+    @apply mb-2 text-lg text-gray-700;
+  }
+}
+
+@layer utilities {
+  @keyframes text-flash {
+    0%,
+    100% {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+
+  .animate-text-flash {
+    animation: text-flash 1300ms infinite;
   }
 }

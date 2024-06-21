@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { 
-  createBrowserRouter,
-  RouterProvider
- } from 'react-router-dom';
- import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
 
 // import App from './App.tsx';
 import { Root } from './routes/Root.tsx';
@@ -22,26 +19,26 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'practice',
-        element: <PracticePage />
+        element: <PracticePage />,
       },
       {
         path: 'settings',
-        element: <SettingsPage />
+        element: <SettingsPage />,
       },
       {
         path: 'stats',
-        element: <StatsPage />
+        element: <StatsPage />,
       },
       {
         path: '',
-        element: <HomePage />
-      }
-    ]
-  }
-])
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
