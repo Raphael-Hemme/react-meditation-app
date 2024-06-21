@@ -10,7 +10,7 @@ export const Root = () => {
   };
 
   return (
-    <div className="h-100 min-h-screen w-screen bg-gradient-to-b from-green-100 to-blue-200 p-10">
+    <div className="h-100 min-h-screen w-screen bg-gradient-to-b from-green-100 to-blue-200 px-10 py-4">
       <Menu menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
 
       <main>
