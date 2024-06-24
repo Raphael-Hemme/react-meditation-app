@@ -1,7 +1,7 @@
 export const HomePage = () => {
   return (
     <div className="flex flex-col items-center gap-12">
-      <h1 className="mt-40 bg-gradient-to-t from-green-500 to-blue-600 bg-clip-text text-transparent">
+      <h1 className="mt-40 bg-gradient-to-t from-emerald-500 to-blue-600 bg-clip-text text-transparent">
         Present
       </h1>
       <p className="text-blue-800">

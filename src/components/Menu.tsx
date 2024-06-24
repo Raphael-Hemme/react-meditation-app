@@ -11,7 +11,7 @@ export const Menu = ({
     <div>
       <button
         onClick={toggleMenu}
-        className="fixed left-7 top-7 z-10 rounded-full bg-gradient-to-b from-green-500 to-blue-500 p-2 text-white"
+        className="fixed left-7 top-7 z-10 rounded-full bg-gradient-to-b from-emerald-500 to-blue-500 p-2 text-white"
       >
         <img src="/src/assets/menu_icon.svg" />
       </button>

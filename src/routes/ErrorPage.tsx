@@ -30,11 +30,11 @@ export const ErrorPage = () => {
       id="error-page"
       className="h-100 flex min-h-screen w-screen flex-col items-center justify-between gap-5 bg-gradient-to-b from-green-100 to-blue-200 px-10 pb-5"
     >
-      <h1 className="mt-3 bg-gradient-to-b from-green-500 to-blue-600 bg-clip-text py-2 text-center text-3xl text-transparent">
+      <h1 className="mt-3 bg-gradient-to-b from-emerald-500 to-blue-600 bg-clip-text py-2 text-center text-3xl text-transparent">
         Error
       </h1>
       <div className="flex flex-col items-center gap-6 rounded-xl bg-gray-100 p-5">
-        <p className="mb-10 flex flex-col items-center bg-gradient-to-b from-green-500 to-blue-700 bg-clip-text text-2xl font-bold text-transparent">
+        <p className="mb-10 flex flex-col items-center bg-gradient-to-b from-emerald-500 to-blue-700 bg-clip-text text-2xl font-bold text-transparent">
           <span>Inhale</span>
           <span>...</span>
           <span>..</span>
