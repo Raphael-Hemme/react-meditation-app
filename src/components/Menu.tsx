@@ -25,16 +25,24 @@ export const Menu = ({
       >
         <ul className="flex flex-col justify-between gap-8 font-bold text-gray-300">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={toggleMenu}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/practice">Practice</NavLink>
+            <NavLink to="/practice" onClick={toggleMenu}>
+              Practice
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/stats">Stats</NavLink>
+            <NavLink to="/stats" onClick={toggleMenu}>
+              Stats
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/settings">Settings</NavLink>
+            <NavLink to="/settings" onClick={toggleMenu}>
+              Settings
+            </NavLink>
           </li>
         </ul>
       </nav>
