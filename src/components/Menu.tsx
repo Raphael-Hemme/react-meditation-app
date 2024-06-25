@@ -1,7 +1,52 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-type MenuEmbeddedInPageOptions = 'HOME' | 'SETTINGS' | 'PRACTICE' | 'STATS';
+type PageOption = '/' | '/practice' | '/settings' | '/stats';
+type NavItem = {
+  path: PageOption;
+  imgSrc: string;
+  ariaLabel: string;
+};
+
+const allNavItems: NavItem[] = [
+  {
+    path: '/',
+    imgSrc: '/src/assets/home_icon.svg',
+    ariaLabel: 'Home',
+  },
+  {
+    path: '/practice',
+    imgSrc: '/src/assets/self_improvement_icon_s.svg',
+    ariaLabel: 'Practice',
+  },
+  {
+    path: '/stats',
+    imgSrc: '/src/assets/bar_chart_icon.svg',
+    ariaLabel: 'Statistics',
+  },
+  {
+    path: '/settings',
+    imgSrc: '/src/assets/settings_icon.svg',
+    ariaLabel: 'Settings',
+  },
+];
+
+const getNavItemsForPage = (path: PageOption): NavItem[] => {
+  switch (path) {
+    case '/stats':
+      return allNavItems.filter((item) => item.path !== '/stats');
+    case '/settings':
+      return allNavItems.filter((item) => item.path !== '/settings');
+    case '/practice':
+      return allNavItems.filter(
+        (item) => item.path === '/' || item.path === '/settings'
+      );
+    default: // root / home as default
+      return allNavItems.filter(
+        (item) => item.path === '/settings' || item.path === '/stats'
+      );
+  }
+};
 
 export const Menu = () => {
   const location = useLocation();
@@ -20,7 +65,7 @@ export const Menu = () => {
   ]);
 
   useEffect(() => {
-    console.log('Test');
+    setDisplayedNavItems(getNavItemsForPage(location.pathname as PageOption));
   }, [location]);
 
   return (
