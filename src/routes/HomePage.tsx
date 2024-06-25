@@ -1,101 +1,23 @@
+import { NavLink } from 'react-router-dom';
+
 export const HomePage = () => {
   return (
-    <div className="flex flex-col items-center gap-12">
+    <div className="flex h-full flex-col items-center gap-28 pb-36">
       <h1 className="mt-40 bg-gradient-to-t from-emerald-500 to-blue-600 bg-clip-text text-transparent">
         Present
       </h1>
-      <p className="text-blue-800">
+      <p className="text-violet-800">
         Present is a simple app that helps you practice being present in the
         moment.
       </p>
-      <p className="text-blue-800">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in
-        hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
-        te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-        vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-        nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-        blandit praesent luptatum zzril delenit augue duis dolore te feugait
-        nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue
-        nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem
-        ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-        wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-        vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-        consequat, vel illum dolore eu feugiat nulla facilisis. At vero eos et
-        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-        ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam
-        diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et
-        invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum.
-        sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-        Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit
-        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in
-        vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-        nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-        blandit praesent luptatum zzril delenit augue duis dolore te feugait
-        nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
-        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-        velit esse molestie consequat, vel illum dolore eu feugiat nulla
-        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-        praesent luptatum zzril delenit augue duis dolore te feugait nulla
-        facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
-        imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum
-        dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-        enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-        lobortis nisl ut aliquip ex ea commodo
-      </p>
+
+      <NavLink
+        to="/practice"
+        aria-label="Practice"
+        className="rounded-full border-2 border-emerald-400 p-6"
+      >
+        <img src="/src/assets/self_improvement_icon_l.svg" />
+      </NavLink>
     </div>
   );
 };
