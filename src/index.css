@@ -6,7 +6,8 @@
   h1 {
     @apply mb-4 text-7xl font-bold;
   }
-  p {
+  p,
+  label {
     @apply mb-2 text-lg text-gray-600;
   }
 }
