@@ -1,57 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import { Menu } from '../components/Menu';
-import React, { useReducer, createContext } from 'react';
-
-type AppState = {
-  settings: {
-    selectedDuration: number;
-  };
-  statistics: {
-    sessions: any[];
-  };
-};
-
-const initialState = {
-  settings: {
-    selectedDuration: 300,
-  },
-  statistics: {
-    sessions: [],
-  },
-};
-
-export const ACTIONS = {
-  SELECT_DURATION: 'select-duration',
-};
-
-const reducer = (
-  state: AppState,
-  action: { type: string; payload: any }
-): AppState => {
-  switch (action.type) {
-    case ACTIONS.SELECT_DURATION:
-      return {
-        ...state,
-        settings: {
-          ...state.settings,
-          selectedDuration: action.payload.selectedDuration,
-        },
-      };
-    default:
-      return state;
-  }
-};
-
-const AppStateContext = createContext<
-  | {
-      state: AppState;
-      dispatch: React.Dispatch<any>;
-    }
-  | undefined
->(undefined);
+import { useReducer } from 'react';
+import { AppStateContext, appStateReducer, getInitialState } from '../AppState';
 
 export const Root = () => {
-  const [appState, dispatch] = useReducer(reducer, initialState);
+  const [appState, dispatch] = useReducer(appStateReducer, getInitialState());
 
   return (
     <AppStateContext.Provider value={{ state: appState, dispatch }}>
@@ -63,12 +16,4 @@ export const Root = () => {
       </div>
     </AppStateContext.Provider>
   );
-};
-
-export const useAppState = () => {
-  const context = React.useContext(AppStateContext);
-  if (context === undefined) {
-    throw new Error('useAppState must be used within an AppStateProvider');
-  }
-  return context;
 };

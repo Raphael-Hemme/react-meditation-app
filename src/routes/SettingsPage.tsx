@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PageTitle } from '../components/PageTitle';
-import { ACTIONS, useAppState } from './Root';
+import { ACTIONS, useAppState } from '../AppState';
 
 export const SettingsPage = () => {
   // Time in full minutes since sub-minute adjustment should not be necessary-> default is 5 minutes
