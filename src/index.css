@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'PlaywriteBR';
+  src: url('src/assets/fonts/Playwrite_BR/PlaywriteBR-VariableFont_wght.ttf')
+    format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,12 +37,17 @@
 li,
 a {
   path {
-    fill: #7c3aed;
+    fill: #7c3aed99;
   }
 }
 li:hover,
 a:hover {
   path {
-    fill: #6d28d9;
+    fill: #6d28d999;
   }
+}
+
+#app-title {
+  font-family: PlaywriteBR, sans-serif;
+  font-style: normal;
 }

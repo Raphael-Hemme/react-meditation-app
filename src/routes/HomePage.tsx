@@ -2,14 +2,17 @@ import { NavLink } from 'react-router-dom';
 
 export const HomePage = () => {
   return (
-    <div className="flex h-full flex-col items-center gap-28 pb-36">
-      <h1 className="mt-40 bg-gradient-to-t from-emerald-500 to-blue-600 bg-clip-text text-transparent">
-        Present
+    <div className="flex h-full flex-col items-center gap-28">
+      <h1
+        className="mt-28 bg-gradient-to-t from-emerald-500 to-blue-600 bg-clip-text p-10 text-transparent"
+        id="app-title"
+      >
+        present
       </h1>
-      <p>
+      {/* <p>
         Present is a simple app that helps you practice being present in the
         moment.
-      </p>
+      </p> */}
 
       <NavLink
         to="/practice"

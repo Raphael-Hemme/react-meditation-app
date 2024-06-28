@@ -70,7 +70,7 @@ export const Menu = () => {
   }, [location]);
 
   return (
-    <div className="absolute bottom-2 left-0 right-0 w-full p-5">
+    <div className="absolute bottom-2 left-0 right-0 w-full px-8 py-6">
       <nav className="w-full">
         <ul className="flex justify-between gap-4 font-bold text-violet-700">
           {displayedNavItems.map((navItem) => (
